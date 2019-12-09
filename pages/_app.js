@@ -1,6 +1,7 @@
 import App from "next/app";
 import React from "react";
 import Head from "next/head";
+import "../public/css/normalize.css";
 import { ThemeProvider } from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
@@ -24,6 +25,7 @@ const CSSVaribles = createGlobalStyle`
     --applio-grey: #c9c9c9;
     --applio-off-white: #f9f9f9;
     --applio-font: "Montserrat", sans-serif;
+    --applio-container-width: '1200px'
   }
 `;
 
@@ -159,7 +161,7 @@ export default class MyApp extends App {
       <ThemeProvider theme={theme}>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
             rel="stylesheet"
           />
         </Head>
