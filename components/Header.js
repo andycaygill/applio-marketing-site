@@ -8,10 +8,13 @@ const HeaderContainer = styled.div`
 `;
 
 const HeaderContent = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 1200px;
-  margin: 0 auto;
+  @media (min-width: 500px) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+  }
 `;
 
 const HeaderLinks = styled.div`
@@ -28,14 +31,14 @@ export default function Header() {
     <HeaderContainer>
       <HeaderContent>
         <img src="./images/logo.svg" alt="Applio Logo" />
-        <HeaderLinks>
+        {/* <HeaderLinks>
           <Link href="/">
             <a>Home</a>
           </Link>
           <Link href="/about">
             <a>About</a>
           </Link>
-        </HeaderLinks>
+        </HeaderLinks> */}
       </HeaderContent>
     </HeaderContainer>
   );

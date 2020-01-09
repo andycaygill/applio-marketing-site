@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "../components/Button.js";
 
-const HeroContainer = styled.div`
+const WhatWeDoContainer = styled.div`
   background-color: var(--applio-dark-blue);
   background-image: url("./images/hero-bg.png"),
     linear-gradient(135deg, #24195a 0%, #3a55a4 100%);
@@ -13,8 +12,6 @@ const HeroContainer = styled.div`
 `;
 
 const HeroContent = styled.div`
-  padding: 120px 20px 50px;
-
   @media (min-width: 900px) {
     padding: 80px 0 50px;
     max-width: 1200px;
@@ -39,18 +36,20 @@ const HeroSubHeading = styled.p`
 
 export default () => {
   return (
-    <HeroContainer>
+    <WhatWeDoContainer>
       <HeroContent>
         <div>
-          <HeroHeading>Lettings applications in half the time</HeroHeading>
+          <HeroHeading>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </HeroHeading>
           <HeroSubHeading>
-            Applio's lettings software makes lettings applications fast and easy
-            for agents, landlords and tenants.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque in risus id est malesuada facilisis.
           </HeroSubHeading>
-          <Button path="#">Coming Soon</Button>
+          <Button path="#">Book a demo</Button>
         </div>
         <img src="./images/hero-image.svg" alt="Applio" />
       </HeroContent>
-    </HeroContainer>
+    </WhatWeDoContainer>
   );
 };
